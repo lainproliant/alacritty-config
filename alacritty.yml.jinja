@@ -65,4 +65,8 @@ selection:
     save_to_clipboard: true
 
 background_opacity: {{config.extra["alpha"]}}
-TERM: xterm-256color
+
+bell:
+    command:
+        program: aplay
+        args: ["/home/lainproliant/.sounds/smw_yoshi_tongue.wav"]
