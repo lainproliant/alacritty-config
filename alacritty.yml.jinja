@@ -1,0 +1,68 @@
+# %%base16_template: alacritty %%
+# Base16 auto-generated - alacritty color config
+# Auto Base16 Theme (https://github.com/makuto/auto-base16-theme/)
+colors:
+  # Default colors
+  primary:
+    background: '0x030325'
+    foreground: '0xa7c4a6'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x030325'
+    cursor: '0xa7c4a6'
+
+  # Normal colors
+  normal:
+    black:   '0x030325'
+    red:     '0xf36098'
+    green:   '0xca548b'
+    yellow:  '0xe436a6'
+    blue:    '0xf36098'
+    magenta: '0xf36098'
+    cyan:    '0xf36098'
+    white:   '0xa7c4a6'
+
+  # Bright colors
+  bright:
+    black:   '0xcb04ae'
+    red:     '0xca548b'
+    green:   '0x26123a'
+    yellow:  '0x042061'
+    blue:    '0xb72ba6'
+    magenta: '0x54255a'
+    cyan:    '0xe436a6'
+    white:   '0x6f0788'
+
+draw_bold_text_with_bright_colors: false
+
+# %%base16_template_end%%
+
+font:
+    normal:
+        family: {{font}}
+        style: Regular
+    bold:
+        family: {{font}}
+        style: Regular
+    italic:
+        family: {{font}}
+        style: Italic
+    size: {{size - 2}}
+    offset:
+        x: 0
+        y: -6
+    glyph_offset:
+        x: 1
+        y: 1
+
+mouse:
+    hide_when_typing: true
+    url:
+        modifiers: Shift
+
+selection:
+    save_to_clipboard: true
+
+background_opacity: {{config.extra["alpha"]}}
+TERM: xterm-256color
