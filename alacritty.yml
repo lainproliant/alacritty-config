@@ -62,77 +62,7 @@ mouse:
 selection:
     save_to_clipboard: true
 
-background_opacity: 0.9
-
-bell:
-    command:
-        program: aplay
-        args: ["/home/lainproliant/.sounds/smw_yoshi_tongue.wav"]
-# %%base16_template: alacritty %%
-# Base16 Ekvoli, approximated to Base16 - alacritty color config
-# Lain Musgrove (lain.proliant@gmail.com), Preben Randhol &lt;randhol+ekvoli@pvv.org&gt;
-colors:
-  # Default colors
-  primary:
-    background: '0x001535'
-    foreground: '0xffffff'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x001535'
-    cursor: '0xffffff'
-
-  # Normal colors
-  normal:
-    black:   '0x001535'
-    red:     '0x0047a7'
-    green:   '0x50e0ff'
-    yellow:  '0x3f8fff'
-    blue:    '0x00a0f0'
-    magenta: '0x90bfd0'
-    cyan:    '0x50a0e0'
-    white:   '0xffffff'
-
-  # Bright colors
-  bright:
-    black:   '0x9590d5'
-    red:     '0x7fe9ff'
-    green:   '0x005090'
-    yellow:  '0x2080c0'
-    blue:    '0xffffff'
-    magenta: '0x32aeff'
-    cyan:    '0xffffff'
-    white:   '0xffffff'
-
-draw_bold_text_with_bright_colors: false
-
-# %%base16_template_end%%
-
-font:
-    normal:
-        family: Luxi Mono
-        style: Regular
-    bold:
-        family: Luxi Mono
-        style: Regular
-    italic:
-        family: Luxi Mono
-        style: Italic
-    size: 16
-    offset:
-        x: 0
-        y: -3
-    glyph_offset:
-        x: 1
-        y: 1
-
-mouse:
-    hide_when_typing: true
-
-selection:
-    save_to_clipboard: true
-
-background_opacity: 0.9
+background_opacity: 0.75
 
 bell:
     command:
