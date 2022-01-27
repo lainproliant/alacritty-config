@@ -1,6 +1,9 @@
 # %%base16_template: alacritty %%
 # Base16 Ekvoli, approximated to Base16 - alacritty color config
 # Lain Musgrove (lain.proliant@gmail.com), Preben Randhol &lt;randhol+ekvoli@pvv.org&gt;
+window:
+  opacity: {{config.extra["alpha"]}}
+
 colors:
   # Default colors
   primary:
@@ -62,7 +65,6 @@ mouse:
 selection:
     save_to_clipboard: true
 
-background_opacity: {{config.extra["alpha"]}}
 
 bell:
     command:
