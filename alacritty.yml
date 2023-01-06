@@ -2,40 +2,40 @@ window:
     opacity: 1
 
 # %%base16_template: alacritty %%
-# Base16 auto-generated - alacritty color config
-# Auto Base16 Theme (https://github.com/makuto/auto-base16-theme/)
+# Base16 Ekvoli, approximated to Base16 - alacritty color config
+# Lain Musgrove (lain.proliant@gmail.com), Preben Randhol &lt;randhol+ekvoli@pvv.org&gt;
 colors:
   # Default colors
   primary:
-    background: '0x030325'
-    foreground: '0xa7c4a6'
+    background: '0x001535'
+    foreground: '0xffffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x030325'
-    cursor: '0xa7c4a6'
+    text: '0x001535'
+    cursor: '0xffffff'
 
   # Normal colors
   normal:
-    black:   '0x030325'
-    red:     '0xf36098'
-    green:   '0xca548b'
-    yellow:  '0xe436a6'
-    blue:    '0xf36098'
-    magenta: '0xf36098'
-    cyan:    '0xf36098'
-    white:   '0xa7c4a6'
+    black:   '0x001535'
+    red:     '0x0047a7'
+    green:   '0x50e0ff'
+    yellow:  '0x3f8fff'
+    blue:    '0x00a0f0'
+    magenta: '0x90bfd0'
+    cyan:    '0x50a0e0'
+    white:   '0xffffff'
 
   # Bright colors
   bright:
-    black:   '0xcb04ae'
-    red:     '0xca548b'
-    green:   '0x26123a'
-    yellow:  '0x042061'
-    blue:    '0xb72ba6'
-    magenta: '0x54255a'
-    cyan:    '0xe436a6'
-    white:   '0x6f0788'
+    black:   '0x9590d5'
+    red:     '0x7fe9ff'
+    green:   '0x005090'
+    yellow:  '0x2080c0'
+    blue:    '0xffffff'
+    magenta: '0x32aeff'
+    cyan:    '0xffffff'
+    white:   '0xffffff'
 
 draw_bold_text_with_bright_colors: false
 
