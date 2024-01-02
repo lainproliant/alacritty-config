@@ -34,20 +34,23 @@ def load_base16():
 
 # -------------------------------------------------------------------
 BASE16 = load_base16()
-BG_HEX = int(BASE16['base00'][1:], 16)
+BG_HEX = int(BASE16["base00"][1:], 16)
+
 
 # -------------------------------------------------------------------
 def hex_to_rgb(color):
     return ((color & 0xFF0000) >> 16, (color & 0x00FF00) >> 8, (color & 0x0000FF) >> 0)
 
+
 BG_RGB = hex_to_rgb(BG_HEX)
+
 
 # -------------------------------------------------------------------
 class Config:
     red: int = BG_RGB[0]
     green: int = BG_RGB[1]
     blue: int = BG_RGB[2]
-    extra: Dict[str, Any] = {'alpha': 1.0}
+    extra: Dict[str, Any] = {"alpha": 1.0}
     random = False
     use_xdefaults = False
 
@@ -63,7 +66,7 @@ class Config:
         return parser
 
     def randomize(self) -> int:
-        """ Gives a random value between 0 and 128, with a 1/3 chance of being 0. """
+        """Gives a random value between 0 and 128, with a 1/3 chance of being 0."""
         return random.choices([0, 1], [1, 2])[0] * random.randint(0, 128)
 
     def parse_args(self):
@@ -73,21 +76,21 @@ class Config:
             self.green = self.randomize()
             self.blue = self.randomize()
         if self.alpha:
-            self.extra['alpha'] = self.alpha
+            self.extra["alpha"] = self.alpha
         return self
 
     @property
     def color(self) -> Tuple[int, int, int, float]:
-        return (self.red, self.green, self.blue, self.extra['alpha'])
+        return (self.red, self.green, self.blue, self.extra["alpha"])
 
     @color.setter
     def color(self, value: Tuple[int, int, int, float]):
-        self.red, self.green, self.blue, self.extra['alpha'] = value
+        self.red, self.green, self.blue, self.extra["alpha"] = value
 
 
 # -------------------------------------------------------------------
 def load_template():
-    with open("alacritty.yml.jinja", "r") as infile:
+    with open("alacritty.toml.jinja", "r") as infile:
         return Template(infile.read())
 
 

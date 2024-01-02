@@ -1,5 +1,5 @@
 window:
-    opacity: 1
+    opacity: 0.85
 
 # %%base16_template: alacritty %%
 # Base16 Ekvoli, approximated to Base16 - alacritty color config
@@ -43,15 +43,15 @@ draw_bold_text_with_bright_colors: false
 
 font:
     normal:
-        family: Luxi Mono
+        family: Fantasque Sans Mono
         style: Regular
     bold:
-        family: Luxi Mono
+        family: Fantasque Sans Mono
         style: Regular
     italic:
-        family: Luxi Mono
+        family: Fantasque Sans Mono
         style: Italic
-    size: 12
+    size: 32
     offset:
         x: 0
         y: -3

@@ -1,0 +1,92 @@
+[bell]
+command = { program="aplay", args = ["/home/lainproliant/.sounds/smw_yoshi_tongue.wav"] }
+
+# %%base16_template: alacritty %%
+# Base16 Ekvoli, approximated to Base16 - alacritty color config
+# Lain Musgrove (lain.proliant@gmail.com), Preben Randhol &lt;randhol+ekvoli@pvv.org&gt;
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+# Default colors
+[colors.primary]
+background = '0x001535'
+foreground = '0xffffff'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = '0x001535'
+cursor = '0xffffff'
+
+# Normal colors
+[colors.normal]
+black = '0x001535'
+red = '0x0047a7'
+green = '0x50e0ff'
+yellow = '0x3f8fff'
+blue = '0x00a0f0'
+magenta = '0x90bfd0'
+cyan = '0x50a0e0'
+white = '0xffffff'
+
+# Bright colors
+[colors.bright]
+black = '0x9590d5'
+red = '0x7fe9ff'
+green = '0x005090'
+yellow = '0x2080c0'
+blue = '0xffffff'
+magenta = '0x32aeff'
+cyan = '0xffffff'
+white = '0xffffff'
+
+# %%base16_template_end%%
+
+[cursor]
+blink_interval = 250
+blink_timeout = 0
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[font]
+size = {{size - 6}}
+
+[font.bold]
+family = "{{font}}"
+style = "Regular"
+
+[font.glyph_offset]
+x = 1
+y = 1
+
+[font.italic]
+family = "{{font}}"
+style = "Italic"
+
+[font.normal]
+family = "{{font}}"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = -3
+
+[[hints.enabled]]
+command = "qutebrowser --target window"
+post_processing = true
+action = "Copy"
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http: ..|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 50000
+
+[selection]
+save_to_clipboard = true
+
+[window]
+opacity = {{config.extra['alpha']}}
