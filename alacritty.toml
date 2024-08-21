@@ -51,10 +51,10 @@ blinking = "Always"
 shape = "Block"
 
 [font]
-size = 32
+size = 22
 
 [font.bold]
-family = "Fantasque Sans Mono"
+family = "Luxi Mono"
 style = "Regular"
 
 [font.glyph_offset]
@@ -62,11 +62,11 @@ x = 1
 y = 1
 
 [font.italic]
-family = "Fantasque Sans Mono"
+family = "Luxi Mono"
 style = "Italic"
 
 [font.normal]
-family = "Fantasque Sans Mono"
+family = "Luxi Mono"
 style = "Regular"
 
 [font.offset]
@@ -74,10 +74,14 @@ x = 0
 y = -3
 
 [[hints.enabled]]
-command = "qutebrowser --target window"
+binding = { key = "U", mods = "Control|Shift" }
+command = "xdg-open"
+hyperlinks = true
+mouse.enabled = true
+mouse.mods = "Control"
 post_processing = true
-action = "Copy"
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http: ..|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+persist = false
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩‘]+"
 
 [mouse]
 hide_when_typing = true
